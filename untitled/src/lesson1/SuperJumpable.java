@@ -1,8 +1,8 @@
 package lesson1;
 
-public interface SuperJumpable extends Jumpable, Runnable {
+//public interface SuperJumpable extends Jumpable, Runnable {
 
-    void superJump(int dist, int h);
+//    void superJump(int dist, int h);
 
 
-}
+//}
