@@ -32,35 +32,35 @@ public class Main {
 //        }
 
 
-//        list.add(1, 10);
-//        list.addAll(2, Arrays.asList(2, 5, 1));
+//        list.add(1, 10); // Добавить объект в список
+//        list.addAll(2, Arrays.asList(2, 5, 1)); // добавление нескольких объектов
 //
 //        System.out.println(list);
-//        list.remove((Integer) 2);
+//        list.remove((Integer) 2); // Удалить конкретный объект указать надо тип объекта
 //        System.out.println(list);
 
-//        list.removeIf(x -> x<=2);
-//        list.removeAll(Arrays.asList(2, 5, 1));
+//        list.removeIf(x -> x<=2); // Позволяет удалить все элементы по определенному условию
+//        list.removeAll(Arrays.asList(2, 5, 1)); // Тоже самое позволяет удалять определенные элементы
 //        System.out.println(list);
 
 //        list.sort(Comparator.naturalOrder());
 //        list.sort(Comparator.reverseOrder());
 //        list.sort(Comparator.comparing((x -> x % 10)));
 
-//        list.replaceAll(x -> x + 2);
+//        list.replaceAll(x -> x + 2); // Всем элементам добавили +2
 //        System.out.println(list);
 //
-//        ((ArrayList<Integer>) list).ensureCapacity(1600);
-//        ((ArrayList<Integer>) list).trimToSize();
+//        ((ArrayList<Integer>) list).ensureCapacity(1600); // Задать точное колличество элементов для листа
+//        ((ArrayList<Integer>) list).trimToSize(); // Удалить неиспользованные элементы
 //
 //        Random random = new Random();
 
-//        long b = System.currentTimeMillis();
+//        long b = System.currentTimeMillis(); // Так считаются милисекунды это начало
 //        for (int i = 0; i < 1000; i++) {
 //            list.add(0,random.nextInt(1000));
 //        }
-//        long e = System.currentTimeMillis();
-//        System.out.println("time: " + (e - b));
+//        long e = System.currentTimeMillis(); // Это конец
+//        System.out.println("time: " + (e - b)); // Это выводит милисикунды на экран
 //
 
 //        System.out.println(linkedList);
@@ -137,9 +137,9 @@ public class Main {
 //        Random random = new Random();
 //        Map<Integer, Integer> hm = new HashMap<>();
 //        for (int i = 0; i < 100; i++) {
-//            int val = random.nextInt(10);
-//            Integer count = hm.getOrDefault(val,0);
-//            hm.put(val, count + 1);
+//            int val = random.nextInt(10); // 100 рандомных чисел берем и считаем сколько у нас совпадений
+//            Integer count = hm.getOrDefault(val,0); Мы получаем сколько раз встречался объект, но если он Нул то ставим 0
+//            hm.put(val, count + 1); Плюсуем значение если оно попадается и ключ одинаковый (ТАК ДЕЛАТЬ ДОМАШКУ)
 //        }
 //        System.out.println(hm);
 //
